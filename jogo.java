@@ -1,7 +1,7 @@
 public class Jogo{
 	private String palavra;
-	public String mascara;
-	private int chances = 6;
+	private String mascara;
+	public int chances = 0;
 	
 	
 	//define a mascara
@@ -15,6 +15,16 @@ public class Jogo{
 	}
 	
 	public void mostrarForca(){
+	enxtension[
+	"|||||||",
+	"|   o",
+	"|  /|\\",
+	"| / | \\",
+	"|   |",
+	"|  / \\",
+	"| /   \\"
+	
+	];
 	/*
 	
 	"|||||||"
@@ -26,7 +36,12 @@ public class Jogo{
 	"| /   \"
 	
 	*/
+	for( int x =0;x<chances;x++){
+			system.out.println(extension[i]);
+		}
 	}
+	
+	
 	public void jogadaN(){}
 	
 	
