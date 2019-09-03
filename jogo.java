@@ -6,7 +6,7 @@ public class Jogo{
 	
 	//define a mascara
 	public void setMascara(){
-		for(int i = 0;i < palavra.lenght; i++){
+		for(int i = 0;i < palavra.length; i++){
 			marcara.charAt(i) = "-";
 		}
 	}
@@ -15,14 +15,14 @@ public class Jogo{
 	}
 	
 	public void mostrarForca(){
-	enxtension[
-	"|||||||",
-	"|   o",
-	"|  /|\\",
-	"| / | \\",
-	"|   |",
-	"|  / \\",
-	"| /   \\"
+	enxtension[][] = [
+	{"|||||||"},
+		{"|   o"},
+			{"|  /|\\"},
+				{"| / | \\"},
+					{"|   |"},
+						{"|  / \\"},
+							{"| /   \\"}
 	
 	];
 	/*
