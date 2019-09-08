@@ -6,14 +6,14 @@ public class Jogo{
 	private String mascara;
 	public int chances = 6;
 	private int w;
-	public String ex[]	 = {
+	public static String ex[]	 = {
 	"|||||||",
 	"|   o",
 	"|  /|\\",
 	"| / | \\",
 	"|   |",
 	"|  / \\",
-	"| /   \\\n\n"};
+	"| /   \\\n\n YOU LOSE OTARO."};
 	//funcionando
 	
 	public void jogar(){
@@ -47,51 +47,58 @@ public class Jogo{
 		//System.out.println("mostrando mascara");
 	}*/
 	
-	public void mostrarForca(int x){
+	public static void mostrarForca(int x){
             //Funcionando
 	
-		for(this.w =0;this.w < x; this.w ++){ 
-	System.out.println(this.ex[this.w]);
+		for(int w =0;w < x;w ++){ 
+	System.out.println(Jogo.ex[w]);
 		}
 	
 	
 	}
 	
 	
-	public void jogadaN(char x){
+	public void jogadaN(char[] x){
+            boolean contem = false;
                 if(this.chances <= 0){
-                
-                }
+                    mostrarForca(7-this.chances);
+                }else{
             
                 //Funcionando
-                boolean contem = false;
+                
 		char[] b = this.palavra.toCharArray();
                 int i,max;
                 max = this.palavra.length();
               for(i=0;i<max;i++){
-		if(b[i] == x  ){
+		if(b[i] == x[0]  ){
                     contem = true;
-                    this.subistituir(i, x);
+                    subistituir(i, x);
                     //System.out.println("xfx");
                     
-                    }
+                    } else {contem =false;}
+              }//end for
+                
+                System.out.println(this.mascara);
                 
                 
-                
-                
-              } //end for
+              } // if
 		if(contem == false){
-                this.chances = this.chances - 1;
+                this.chances --;
                 }
 	}//end void
 	
 	public void subistituir(int pox, char c){
-            char[] b = this.mascara.toCharArray();
-            b[pox] = c;
-            this.mascara = String.valueOf(b);
             
         
         }
+
+    private void subistituir(int i, char[] x) {
+        char[] d = this.mascara.toCharArray();
+            d[i] = x[0];
+            this.mascara = String.valueOf(d);
+            
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 	
 	
 	
