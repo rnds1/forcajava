@@ -27,6 +27,7 @@ public class Rules {
     private String palavra;
     private char[] mask = null;
     private String chars;
+    private char[] aux;
     //end variaveis
     
     Rules(){
@@ -77,10 +78,12 @@ public class Rules {
             ler();
             if(linha.equals(palavra)){
                 mask = palavra.toCharArray();
-                System.out.println("vc acertou a palavra:");
-                  System.out.println(mask);
-            System.out.println("Vitoria");
                 
+            System.out.println("Vitoria");
+             
+            
+                    }else if(palavra.contains(linha)){
+            
                         
                    
             }else {
