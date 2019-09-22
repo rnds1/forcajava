@@ -83,8 +83,16 @@ public class Rules {
              
             
                     }else if(palavra.contains(linha)){
-            
                         
+                            
+                     System.out.println("tem algo certo");
+                    
+                     for(int i =0;i<palavra.length();i++){
+                        if(linha.charAt(0) == palavra.charAt(i))
+                         mask[i] = linha.charAt(0);
+                     }
+                        
+                     run();
                    
             }else {
                 chances--;
@@ -111,7 +119,7 @@ public class Rules {
      if(linha.length() < 1){
      ler();
      }
-    // else{  sddddasd
+    // else{
      //if(linha.toLowerCase().contains(linha)|| linha.toUpperCase().contains(linha)){
      //System.out.println("oux");
      //}
