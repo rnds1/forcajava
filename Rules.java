@@ -78,7 +78,7 @@ public class Rules {
             if(linha.equals(palavra)){
                 mask = palavra.toCharArray();
             System.out.println("Vitoria");
-                Runtime.getRuntime().runFinalization();
+                
                         
                    
             }else {
