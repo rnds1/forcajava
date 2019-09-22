@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package Main;
-
+   //teste1();
 import java.util.Random;
 
 /**
@@ -27,7 +27,7 @@ public class Palavras {
        System.out.println("Gerando palavra....");
     }
     
-    
+       //teste1();
     
 
     
