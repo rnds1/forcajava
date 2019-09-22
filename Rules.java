@@ -111,7 +111,7 @@ public class Rules {
      if(linha.length() < 1){
      ler();
      }
-    // else{
+    // else{  sddddasd
      //if(linha.toLowerCase().contains(linha)|| linha.toUpperCase().contains(linha)){
      //System.out.println("oux");
      //}
