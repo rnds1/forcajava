@@ -77,6 +77,8 @@ public class Rules {
             ler();
             if(linha.equals(palavra)){
                 mask = palavra.toCharArray();
+                System.out.println("vc acertou a palavra:");
+                  System.out.println(mask);
             System.out.println("Vitoria");
                 
                         
