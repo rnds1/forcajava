@@ -9,7 +9,8 @@ import java.util.Random;
 
 /**
  *
- * @author W7E
+ * @author Rnds1@hotmail.com
+ * @@code Random word
  */
 public class Palavras {
     // LISTA DE PALAVRAS
